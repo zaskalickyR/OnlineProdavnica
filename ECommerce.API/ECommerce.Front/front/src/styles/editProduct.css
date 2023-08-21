@@ -1,0 +1,181 @@
+
+.editProduct {
+  position: relative;
+}
+
+.close-button-modal {
+    position: absolute !important;
+    top: 30px !important;
+    right: 30px !important;
+    background: none !important;
+    border: none;
+    color: rgb(0, 0, 0);
+    font-size: 40px;
+    cursor: pointer;
+}
+.close-button-modal:hover {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    background: none;
+    border: none;
+    color: rgb(0, 0, 0);
+    font-size: 40px;
+    cursor: pointer;
+}
+
+.editProduct .close-button {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  background: none;
+  border: none;
+  color: rgb(0, 0, 0);
+  font-size: 40px;
+  cursor: pointer;
+}
+
+.edit-profile-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(255, 153, 0, 0.822);
+  z-index: 999;
+}
+
+.modal-content {
+  max-width: 1200px;
+  width: 100%;
+  padding: 20px;
+  background-color: #ff880000;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.register-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.register-form-wrapper {
+  margin-top: 20px;
+}
+
+.register-form-wrapper h1 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.register-form-wrapper .row {
+  display: flex;
+  gap: 20px;
+}
+
+.register-form-wrapper .col-md-6 {
+  flex: 1;
+}
+
+.register-form-wrapper .input-label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.register-form-wrapper .input-label span {
+  color: red;
+}
+
+.register-form-wrapper .input-wrapper {
+  position: relative;
+}
+
+.register-form-wrapper input,
+.register-form-wrapper select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.imageProfileEdit {
+  align-items: center;
+  width: 200px;
+  margin: auto;
+  margin-left: 220px;
+  height: auto;
+}
+
+.register-form-wrapper button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-top: 20px;
+  background-color: #fbcbe7;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.register-form-wrapper button:hover {
+  background-color: #eaa8f3;
+}
+
+.login-link-wrapper {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.login-link-wrapper a {
+  color: #333;
+  text-decoration: none;
+}
+
+.logo {
+  display: block;
+  margin: 0 auto;
+  width: 150px;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+button {
+  display: inline-block;
+  padding: 3px 15px;
+  background-color: purple;
+  color: black;
+  border-radius: 20px;
+  margin-top: 10px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.row{
+  width: auto !important;
+}
+.submitButton{
+  width: auto !important;
+}
+
+button:hover {
+  background-color: rgb(147, 0, 180);
+  color: white;
+}
+
+.button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid rgba(0, 0, 0, 0.6);
+  border-radius: 1rem;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}

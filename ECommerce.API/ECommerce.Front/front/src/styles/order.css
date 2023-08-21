@@ -1,0 +1,28 @@
+.statusOrder{
+  padding: 5px 10px 5px 10px;
+  border-radius: 20px;
+  font-weight: 600;
+  font-size: 12px !important;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
+
+
+
+.statusOrder.pending {
+  background-color: yellow;
+}
+
+.statusOrder.approved {
+  background-color: rgb(195, 255, 105);
+}
+
+.statusOrder.shipped {
+  background-color: rgb(100, 173, 207);
+}
+.cancelorderbutton{
+  padding-left: 10px;
+}
+.statusOrder.rejected {
+  background-color: red;
+}

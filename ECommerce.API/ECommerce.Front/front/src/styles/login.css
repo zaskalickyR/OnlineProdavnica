@@ -1,0 +1,96 @@
+.login {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 100px;
+}
+
+.login h1 {
+  font-size: 40;
+  text-align: center;
+  color: white;
+  margin-bottom: 20px;
+}
+.logo{
+  width: 200px;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 10px;
+  margin: auto;
+}
+
+.login .frame {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 20px;
+  background: #00000087;
+}
+.login-link-wrapper{
+  color: white !important;
+}
+.login form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.login .login-photo {
+  width: 200px;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.login label {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+  align-items: center;
+  color: rgba(255, 255, 255, 0.572);
+}
+
+.login .input-label {
+  font-size: 16px;
+  font-weight: 500;
+  padding-bottom: 10px;
+}
+
+.login .input-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.login input[type="text"],
+.login input[type="password"] {
+  width: 300px;
+  height: 40px;
+  padding: 5px;
+  margin-top: 5px;
+  border: 1px solid #cccccc2f;
+  border-radius: 30px;
+}
+
+.login button[type="submit"] {
+  width: 200px;
+  height: 40px;
+  margin-top: 20px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #000;
+  background-color: #9000ff;
+  border: 2px solid black;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.login button[type="submit"]:hover {
+  background-color: #000000;
+  color: white;
+  margin-top: 22px;
+  margin-bottom: 3px;
+  width: 190px;
+  height: 35px;
+}

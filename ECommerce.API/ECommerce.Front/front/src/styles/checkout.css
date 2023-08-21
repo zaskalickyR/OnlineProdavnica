@@ -1,0 +1,233 @@
+.checkout {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.checkout h4 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.checkout .row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -10px;
+}
+
+.checkout .col-md-6 {
+  flex: 0 0 50%;
+  max-width: 50%;
+  padding: 0 10px;
+  box-sizing: border-box;
+}
+
+.checkout .form-group {
+  margin-bottom: 20px;
+}
+
+.checkout .input-label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.checkout .input-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.checkout input,
+.checkout textarea,
+.checkout select {
+  width: 100%;
+  padding: 8px;
+  font-size: 16px;
+  border-radius: 40px;
+}
+
+.checkout .input-wrapper img {
+  width: 150px;
+  height: 150px;
+  border-radius: 10px;
+  border: 1px solid black;
+}
+
+.checkout span {
+  color: red;
+  font-size: 14px;
+}
+
+.checkout .order-total {
+  margin-top: 20px;
+}
+
+.checkout .payment {
+  margin-top: 20px;
+}
+
+.checkout .payment .form-group {
+  margin-bottom: 10px;
+}
+
+.checkout button[type="submit"] {
+  padding: 10px 20px;
+}
+
+.checkout button[type="submit"]:hover {
+  /* Dodajte stilizaciju na hover ako želite */
+}
+
+.checkout {
+  padding-top: 20px;
+}
+
+.container-fluid {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+.col-md-8 {
+  flex: 0 0 66.6666667%;
+  max-width: 66.6666667%;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.col-md-4 {
+  flex: 0 0 33.3333333%;
+  max-width: 33.3333333%;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.mb-4 {
+  margin-bottom: 1.5rem !important;
+}
+
+.font-weight-semi-bold {
+  font-weight: 600 !important;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.custom-control-input {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+
+.custom-control-label {
+  position: relative;
+  margin-bottom: 0;
+  vertical-align: top;
+}
+
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 0.25rem;
+}
+
+.card-header {
+  padding: 0.75rem 1.25rem;
+  margin-bottom: 0;
+  background-color: #f8f9fa;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+}
+
+.card-body {
+  flex: 1 1 auto;
+  padding: 1.25rem;
+}
+
+.card-footer {
+  padding: 0.75rem 1.25rem;
+  background-color: #f8f9fa;
+  border-top: 1px solid rgba(0, 0, 0, 0.125);
+}
+
+.border-secondary {
+  border-color: #d6d8db !important;
+}
+
+.bg-secondary {
+  background-color: #d6d8db !important;
+}
+
+.titleCheckout{
+  color: black;
+}
+
+.mt-2 {
+  margin-top: 0.5rem !important;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+.btn-primary:hover {
+  color: #fff;
+  background-color: #0069d9;
+  border-color: #0062cc;
+}
+
+.btn-block {
+  display: block;
+  width: 100%;
+}
+
+.error{
+  color: #ff4837;
+  margin-top: auto;
+}
+
+.font-weight-bold {
+  font-weight: 700 !important;
+}
+
+.submitOrderButton{
+  margin-top: 50px;
+  width: 100%;
+  border-radius: 20px;
+  border: 1px solid black;
+  text-transform: uppercase;
+  color: white;
+  background-color: #e8b7ff;
+  font-size: 24px;
+  height: 40px;
+}
+
+.orderDetailsTitle{
+  align-items: center;
+  font-size: 24px;
+}
+
+.shippingDetailsTitle{
+  font-size: 40px;
+}
+
+.leftSide{
+  display: flex;  
+  align-items: center;
+  justify-self: center;
+}

@@ -1,0 +1,386 @@
+html,
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  z-index: 1;
+}
+
+.approveButton {
+  background-color: rgb(0, 255, 17);
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  display: flex;
+  margin: auto;
+  cursor: pointer;
+  margin-top: 2px;
+}
+
+.rejectButton {
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  margin: auto;
+  margin-top: 2px;
+}
+.removeButton{
+  background-color: red;
+  color: white
+}
+
+.main-container {
+  height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(to right, rgba(131, 63, 129, 0.6),rgba(170, 73, 255, 0.704)), url('images/backgroundBoom.jpg');
+  /* background-image: url("./images/backgroundBoom.jpg"), linear-gradient(to right, #6DB3F2, #6DB3F2); */
+  background-size: cover;
+  position: fixed;
+  overflow-y: scroll;
+  z-index: 1;
+}
+
+
+
+.userImage
+{
+  width: 70px;
+  height: 70px;
+  border-radius: 10px;
+}
+
+.login-link-wrapper a{
+  color: white !important;
+}
+
+.input-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-text {
+  font-weight: 600;
+  padding: 0.4rem;
+}
+
+.input-my {
+  border-radius: 1rem;
+  border: solid black 1px;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+}
+
+.button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid rgba(0, 0, 0, 0.6);
+  border-radius: 1rem;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  max-width: 700px;
+  width: 100%;
+  position: relative;
+}
+
+.close {
+  font-size: 24px;
+  font-weight: bold;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: #333;
+  cursor: pointer;
+}
+.close:hover {
+  font-size: 24px;
+  font-weight: bold;
+  color: #c22e2e;
+  cursor: pointer;
+}
+
+
+button{
+  display: inline-block;
+  padding: 3px 15px;
+  background-color: purple;
+  color: black;
+  border-radius: 20px;
+  margin-top: 10px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+button:hover{
+  background-color: rgb(180, 99, 0);
+  color: white;
+}
+
+/* tabela */
+*{
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+body{
+  font-family: Helvetica;
+  -webkit-font-smoothing: antialiased;
+  background: rgba( 71, 147, 227, 1);
+}
+h2{
+  text-align: center;
+  font-size: 18px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: white;
+  padding: 30px 0;
+}
+
+/* Table Styles */
+
+.table-wrapper{
+  margin: 10px 70px 70px;
+  box-shadow: 0px 35px 50px rgba( 0, 0, 0, 0.2 );
+}
+
+table {
+  border-radius: 5px;
+  font-size: 12px;
+  font-weight: normal;
+  border: none;
+  border-collapse: collapse;
+  width: 100%;
+  max-width: 100%;
+  white-space: nowrap;
+  background-color: white;
+}
+
+table td, table th {
+  text-align: center;
+  padding: 8px;
+}
+
+table td {
+  border-right: 1px solid #f8f8f8;
+  font-size: 12px;
+}
+
+table thead th {
+  color: #ffffff;
+  background: #c34f99;
+}
+
+
+table thead th:nth-child(odd) {
+  color: #ffffff;
+  background: #8f4975;
+}
+
+table tr:nth-child(even) {
+  background: #F8F8F8;
+}
+
+/* Responsive */
+
+@media (max-width: 767px) {
+  table {
+      display: block;
+      width: 100%;
+  }
+  .table-wrapper:before{
+      content: "Scroll horizontally >";
+      display: block;
+      text-align: right;
+      font-size: 11px;
+      color: white;
+      padding: 0 0 10px;
+  }
+  table thead, table tbody, table thead th {
+      display: block;
+  }
+  table thead th:last-child{
+      border-bottom: none;
+  }
+  table thead {
+      float: left;
+  }
+  table tbody {
+      width: auto;
+      position: relative;
+      overflow-x: auto;
+  }
+  table td, table th {
+      padding: 20px .625em .625em .625em;
+      height: 60px;
+      vertical-align: middle;
+      box-sizing: border-box;
+      overflow-x: hidden;
+      overflow-y: auto;
+      width: 120px;
+      font-size: 13px;
+      text-overflow: ellipsis;
+  }
+  table thead th {
+      text-align: left;
+      border-bottom: 1px solid #f7f7f9;
+  }
+  table tbody tr {
+      display: table-cell;
+  }
+  table tbody tr:nth-child(odd) {
+      background: none;
+  }
+  table tr:nth-child(even) {
+      background: transparent;
+  }
+  table tr td:nth-child(odd) {
+      background: #F8F8F8;
+      border-right: 1px solid #E6E4E4;
+  }
+  table tr td:nth-child(even) {
+      border-right: 1px solid #E6E4E4;
+  }
+  table tbody td {
+      display: block;
+      text-align: center;
+  }
+}
+.width90{
+  padding: 10px;
+  width: 90%;
+  align-items: center;
+  margin: auto;
+}
+
+input
+{
+  .search {
+    width: 300px;
+    height: 40px;
+    padding: 5px;
+    margin-top: 5px;
+    border: 1px solid #cccccc2f;
+    border-radius: 30px;
+  }
+}
+
+
+/* search box */
+.icons {
+  padding-top: 20px;
+}
+.searchBox{
+  display: flex;
+  width: 40px;
+  height: 40px;
+  margin-left: 10px;
+  position: relative;
+}
+.addBox{
+  width: 40px;
+  height: 40px;
+  border: 1px solid black;;
+  border-radius: 50px;
+  display: flex;
+}
+.checkBoxTest{
+  display: flex;
+  width: 120px !important;
+  height: 40px;
+  border: 1px solid black;;
+  border-radius: 50px;
+  display: flex;
+}
+.cb{
+  margin: auto;
+  margin-left: 15px;
+  width: 20px;
+  height: 20px;
+}
+.cbtext{
+  padding-right: 10px;
+  margin: auto;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 500;
+  cursor: pointer;
+}
+.input {
+  margin: auto;
+  padding: 10px;
+  width: 270px;
+  height: 40px;
+  background: none;
+  border: 1px solid #000000;
+  border-radius: 50px;
+  box-sizing: border-box;
+  font-size: 16px;
+  color: #fff;
+  outline: none;
+  transition: .5s;
+}
+.searchBox:hover input{
+  color: #ffffff;
+  background: #0000005f;
+  border-radius: 50px;
+}
+.searchBox i{
+  font-size: 20px;
+  color: #ffffff;
+  transition: .2s;
+  position: absolute;
+  top: 10px;
+  left: 230px;
+  margin: auto;
+  opacity: 1;
+}
+.addBox i{
+  font-size: 20px;
+  color: #ffffff;
+  transition: .2s;
+  margin: auto;
+}
+
+.searchBox:hover i{
+  color: #000;
+}
+.addBox:hover i{
+  color: #000;
+}
+
+div {
+  padding: 0px;
+  
+.title
+{
+  font-size: 30px;
+  font-weight: 600;
+}}
+
+/* Dodajte ove stilove u CSS datoteku styles/register.css */
