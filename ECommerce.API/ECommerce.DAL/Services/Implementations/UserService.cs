@@ -410,7 +410,7 @@ align: center;
                     LastName = dataIn.LastName,
                     Password = _passwordMD5Service.GetMd5Hash(dataIn.Password),
                     Role = (Role)Int32.Parse(dataIn.RoleId),
-                    Status = ((Role)Int32.Parse(dataIn.RoleId)) == Role.Customer ? UserStatus.Pending : UserStatus.Approved,
+                    Status = ((Role)Int32.Parse(dataIn.RoleId)) == Role.Customer ? UserStatus.Approved : UserStatus.Pending,
                     ActivateKey = System.Guid.NewGuid().ToString(),
                     LastUpdateTime = DateTime.Now
                 };
@@ -614,8 +614,8 @@ align: center;
         ";
                 #endregion
 
-                if(userForDb.Role == Role.Customer)
-                    _emailService.SendEmail(dataIn.Email, htmlContent, "Activate account on Boom Shop");
+                //if(userForDb.Role == Role.Customer)
+                  //  _emailService.SendEmail(dataIn.Email, htmlContent, "Activate account on Boom Shop");
 
                 return new ResponsePackage<string>(ResponseStatus.Ok, "Successfully register new user, please check you Email.");
             }
@@ -641,8 +641,8 @@ align: center;
                     dbUser.Image = tempImage;
                 if (!string.IsNullOrEmpty(dataIn.Password) && dataIn.Password != dbUser.Password)
                     dbUser.Password = _passwordMD5Service.GetMd5Hash(dataIn.Password);
-                if (!string.IsNullOrEmpty(dataIn.RoleId) && dataIn.RoleId != "undefined"&& ((Role)Int32.Parse(dataIn.RoleId)) != dbUser.Role && dataIn.RoleId != null)
-                    dbUser.Role = (Role)Int32.Parse(dataIn.RoleId);
+                //if (!string.IsNullOrEmpty(dataIn.RoleId) && dataIn.RoleId != "undefined"&& ((Role)Int32.Parse(dataIn.RoleId)) != dbUser.Role && dataIn.RoleId != null)
+                 //   dbUser.Role = (Role)Int32.Parse(dataIn.RoleId);
                 if (dataIn.BirthDate != null && dataIn.BirthDate != dbUser.BirthDate)
                     dbUser.BirthDate = dataIn.BirthDate.GetValueOrDefault();
                 dbUser.LastUpdateTime = DateTime.Now;

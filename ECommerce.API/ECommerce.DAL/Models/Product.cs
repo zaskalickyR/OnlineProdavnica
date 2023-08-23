@@ -25,7 +25,7 @@ namespace ECommerce.DAL.Models
             {
                 string uniqueFileName = Guid.NewGuid().ToString() + Path.GetExtension(image.FileName);
 
-                string imagePath = Path.Combine("C:\\Users\\stefa\\OneDrive\\Desktop\\Rastislav\\OnlineProdavnica\\ECommerce.API\\Products\\ECommerce.Product\\images", uniqueFileName);
+                string imagePath = Path.Combine("C:\\Users\\Lenovo\\source\\repos\\OnlineProdavnica\\ECommerce.API\\Products\\ECommerce.Product\\images", uniqueFileName);
 
                 using (var fileStream = new FileStream(imagePath, FileMode.Create))
                 {
