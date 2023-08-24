@@ -45,10 +45,13 @@ const ProductPage = () => {
     <div className="container-product">
       <div className="card-product">
         <div className="row">
-          <div className="col-md-4 kol2">
+          <div className="col-md-12">
             <img src={product.images} alt={product.name} width="400px" />
           </div>
-          <div className="col-md-6 kol1">
+          
+        </div>
+        <div className='row'>
+        <div className="col-md-12">
             <p className="title">{product.name}</p>
             <p className="product-desc">{product.description}</p>
             <p className="product-price">{product.price} RSD</p>
@@ -56,7 +59,7 @@ const ProductPage = () => {
               ADD TO CART
             </button>
           </div>
-        </div>
+          </div>
       </div>
     </div>
   );

@@ -381,7 +381,7 @@ div {
 {
   font-size: 30px;
   font-weight: 600;
-  color: white;
+  color: rgb(62, 62, 62);
 }}
 
 /* Dodajte ove stilove u CSS datoteku styles/register.css */

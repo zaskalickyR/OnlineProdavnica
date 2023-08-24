@@ -115,7 +115,7 @@ class HomePage extends React.Component {
                   <div className="col-md-12">
                     <h1 className="m-b-20"><strong>Dobrodosli na nas <br /> SHOP ONLINE</strong></h1>
                     <p className="m-b-40">Kupujte po najpovoljnijim cenama na internetu <br /> i stedite vas novac.</p>
-                    <p><a className="btn hvr-hover" href="#">KUPI ODMAH</a></p>
+                    {/* <p><a className="btn hvr-hover" href="#">KUPI ODMAH</a></p> */}
                   </div>
                 </div>
               </div>
@@ -127,7 +127,7 @@ class HomePage extends React.Component {
                   <div className="col-md-12">
                   <h1 className="m-b-20"><strong>Poruci i ocekuj paket <br /> u roku od 2 radna dana</strong></h1>
                   <p className="m-b-40">Vrsimo dostavu svim kurirskim sluzbama na teritoriji Srbije.</p>
-                  <p><a className="btn hvr-hover" href="#">KUPI ODMAH</a></p>
+                  {/* <p><a className="btn hvr-hover" href="#">KUPI ODMAH</a></p> */}
                   </div>
                 </div>
               </div>
@@ -139,7 +139,7 @@ class HomePage extends React.Component {
                   <div className="col-md-12">
                   <h1 className="m-b-20"><strong>Kupi i dobijas <br /> POKLON</strong></h1>
                   <p className="m-b-40">Kupovinom kod nas dobijate poklon iznenadjenja.</p>
-                  <p><a className="btn hvr-hover" href="#">KUPI ODMAH</a></p>
+                  {/* <p><a className="btn hvr-hover" href="#">KUPI ODMAH</a></p> */}
                   </div>
                 </div>
               </div>
